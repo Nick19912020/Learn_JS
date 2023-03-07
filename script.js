@@ -10,8 +10,6 @@ console.log(answer)
 console.log(secondAnsver)
 console.log(thirdAnswer)
 console.log(thirdAnswer)
-console.log(thirdAnswer)
-
 
 
 
