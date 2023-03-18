@@ -7,27 +7,32 @@
 // console.log((i + "").substring(0, 2))
 // console.log(result)
 
-let days = [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]];
-let lang = "ru";
+// let days = [["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]];
+// let lang = "ru";
 
-let result1 = lang === "ru" ? console.log(days[1]) : 
-lang === "en" ? console.log(days[0]) : 
-console.log("Невалидное значение");
+// let result1 = lang === "ru" ? console.log(days[1]) : 
+// lang === "en" ? console.log(days[0]) : 
+// console.log("Невалидное значение");
 
-if (lang = "en") {
-    console.log(days[0])
-} else if ( lang = "ru") {
-    console.log(days[1])
-};
+// if (lang === "en") {
+//     console.log(days[0])
+// } else if ( lang === "ru") {
+//     console.log(days[1])
+// };
 
-switch (lang) {
-    case "ru":
-        console.log(days[1])
-    break;
-    case "en":
-        console.log(days[0])
-    break;
-    default:
-        console.log("Невалидное значение");
+// switch (lang) {
+//     case "ru":
+//         console.log(days[1])
+//     break;
+//     case "en":
+//         console.log(days[0])
+//     break;
+//     default:
+//         console.log("Невалидное значение");
 
-}
+// }
+
+let namePerson = "Александр";
+let resultSecond = namePerson === "Артем" || namePerson === "Артём" ? console.log("директор") : 
+namePerson === "Александр" ? console.log("преподаватель") :
+console.log("студент");
