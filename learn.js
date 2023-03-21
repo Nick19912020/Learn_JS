@@ -10,9 +10,25 @@ let service1 = prompt("Какой дополнительный тип услуг
 let servicePrice1 = +prompt("Сколько это будет стоить?", "1");
 let service2= prompt("Какой дополнительный тип услуги нужен?", "");
 let servicePrice2= +prompt("Сколько это будет стоить?", "1");
-let fullPrice = screenPrice + servicePrice1 + servicePrice2;
-let servicePercentPrice = fullPrice - (fullPrice*(rollback/100));
+let fullPrice
+let servicePercentPrice
+let allServicePrice
 
+const getAllServicePrice = function () {
+    return servicePrice1 + servicePrice2
+}();
+
+const getFullPrice = function () {
+    return fullPrice + allServicePrice
+}();
+
+// const getTitle = function () {
+
+// }
+
+const getServicePercentPrices = function () {
+    return fullPrice - (fullPrice*(rollback/100))
+}();
 
 switch (true) {
     case fullPrice > 30000:
@@ -30,9 +46,6 @@ switch (true) {
 
 
 
-console.log(typeof(title));
-console.log(typeof(fullPrice));
-console.log(typeof(adaptive));
 console.log(screens.length);
 console.log("Стоимость верстки экранов " +  screenPrice +  " рублей");
 console.log("Стоимость разработки сайтов " +  fullPrice +  " рублей");
